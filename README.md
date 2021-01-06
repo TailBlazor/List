@@ -1,4 +1,4 @@
-# TailBlazor.Table
+# TailBlazor.List
 
 Blazor List a basic yet customizable list component for Tailwindcss
 
