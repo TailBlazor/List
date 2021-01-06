@@ -1,0 +1,11 @@
+@namespace TailBlazor.List
+@typeparam TItem
+
+<ul class="@Class">
+  @foreach (var listItem in Items)
+  {
+      <li>
+          @ChildContent(listItem)
+      </li>
+  }
+</ul>

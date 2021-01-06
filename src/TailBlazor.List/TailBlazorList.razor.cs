@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Components;
 
 namespace TailBlazor.List
 {
-    public partial class TailBlazorListTemplate<TItem>
+    public partial class TailBlazorList<TItem>
     {
         [Parameter]
         public RenderFragment<TItem> ChildContent { get; set; }
@@ -12,9 +12,6 @@ namespace TailBlazor.List
         public IEnumerable<TItem> Items { get; set; }
 
         [Parameter]
-        public string ListClass { get; set; } = "divide-y divide-gray-200";
-
-        [Parameter]
-        public string BodyClass { get; set; } = "bg-white shadow-md overflow-hidden sm:rounded-md";
+        public string Class { get; set; } = "bg-white shadow-md overflow-hidden sm:rounded-md divide-y divide-gray-200";
     }
 }
